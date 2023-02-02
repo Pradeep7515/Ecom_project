@@ -9,5 +9,5 @@ if (mail($to_email, $subject, $body, $headers)) {
 } else {
     echo "Email sending failed...";
 }
-// that s not work
+// navdip patel done this work !!
 ?>
