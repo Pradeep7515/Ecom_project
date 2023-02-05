@@ -1,20 +1,51 @@
 <?php
-// include '';
+
+//start session on web page
+// session_start();
+
+//config.php
+
+//Include Google Client Library for PHP autoload file
+require_once '../../vendor/autoload.php';
+
+//Make object of Google API Client for call Google API
+$google_client = new Google_Client();
+
+//Set the OAuth 2.0 Client ID
+$google_client->setClientId('957017817470-lagu0cf0lc9rifnerhfrh2mup2795q2q.apps.googleusercontent.com');
+
+//Set the OAuth 2.0 Client Secret key
+$google_client->setClientSecret('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');
+
+//Set the OAuth 2.0 Redirect URI
+$google_client->setRedirectUri('http://localhost/project%20ecommrce/pages/user/index.php');
+
+// to get the email and profile 
+$google_client->addScope('email');
+
+$google_client->addScope('profile');
+
+$conn = mysqli_connect('localhost','root','','magicpin');
+
+?> 
+
+<!-- <?php
+
 ?>
 <!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <!-- Font Awesome -->
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
     <script src="./jquery-3.6.0.min.js"></script>
 
@@ -29,7 +60,7 @@
 </head>
 
 <body>
-    <!-- Just an image -->
+ 
     <nav class="navbar navbar-light bg-light p-3 pl-1">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -78,7 +109,6 @@
 
 
                                             <div class="form-outline mb-4">
-                                                <!-- <input type="text" id="form3Example8" name="address" class="form-control form-control-lg" /> -->
                                                 <textarea name="address" class="form-control form-control-lg" id="form3Example8" rows="2" cols="20"></textarea>
                                                 <label class="form-label" for="form3Example8">Address</label>
                                             </div>
@@ -130,7 +160,6 @@
                                             <div class="d-flex justify-content-end pt-3">
                                             
                                                 <button type="button" class="btn btn-light btn-lg">Reset all</button>
-                                                <!-- <button type="button" class="btn btn-primary btn-lg ms-2">Submit</button> -->
                                                 <input type="submit" class="btn btn-primary btn-lg ms-2" name="submit" value="Submit">
                                             </div>
                                         </form>
@@ -146,7 +175,6 @@
     </div>
 
 
-    <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -155,4 +183,4 @@
 
 </body>
 
-</html>
+</html> -->
