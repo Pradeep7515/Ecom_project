@@ -1,5 +1,6 @@
 <?php
-include '../../php/config.php';
+// include '../../php/config.php';
+session_start();
 $name = $_SESSION['fname'];
 // $google = $_SESSION['user_first_name'];
 // echo $name;
@@ -46,9 +47,8 @@ $name = $_SESSION['fname'];
 								>
 								<?php
                 if(isset($_POST['google'])){
-                  echo $_SESSION['user_first_name'];
+                  // echo $_SESSION['user_first_name'];
                 }else{
-
                echo $name;
               }
                 ?>
@@ -155,7 +155,7 @@ $name = $_SESSION['fname'];
                     <a class="nav-link " href="#">Smartphones</a>
                   </li>
                   <li class="nav-item p-2 ">
-                    <a class="nav-link " href="#">Cameras</a>
+                    <a class="nav-link " href="contact.php">Contact</a>
                   </li>
                   <li class="nav-item p-2">
                     <a class="nav-link " href="#">Accessories</a>
@@ -175,5 +175,45 @@ $name = $_SESSION['fname'];
     </div>
     <!-- /MAIN HEADER -->
   </header> 
+
+      <!-- NAVIGATION -->
+      <nav id="navigation" class="">
+			<!-- container -->
+			<div class="container p-0 px-4 px-lg-3">
+	
+                <nav class=" navbar-expand-sm d-none d-lg-block   m-0 p-0">
+                    
+                    
+                    <div class="collapse navbar-collapse p-0" id="navbarNav">
+                      <ul class="navbar-nav w-100 main-nav d-flex justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link" href="new_home.php">Home</a>
+                        </li>
+                        <li class="nav-item ">
+							<a class="nav-link" href="#">Hot Deal</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link " href="#">Laptops</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">Smartphones</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link " href="contact.php">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#">Accessories</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>
+				  
+				
+			</div>
+			<!-- /container -->
+		</nav>
 </body>
 </html>
