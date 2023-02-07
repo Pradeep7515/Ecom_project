@@ -30,3 +30,76 @@ width: 165px;
   color: red;
   background-color: #faabab;
 }
+.map{
+  height: 74vh;
+  width: 100%;
+  border-radius: 15px;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .tit{
+      font-size: 1.5rem;
+      font-weight: 600;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .tit{
+      font-size: 1.7rem;
+      font-weight: 600;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .tit{
+      font-size: 2rem;
+      font-weight: 600;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .tit{
+      font-size: 2rem;
+      font-weight: 600;
+  }
+}
+.co-icon{
+  height: 45px;
+  width: 45px;
+  background-color: #D10024;
+  border-radius: 25px;
+}
+.iconX{
+  color:#eee;
+  font-size: 20px;
+}
+.textX{
+  font-weight: 500;
+  font-size: 18px;
+}
+.addX{
+  margin-left: 45px;
+}
+.sgx{
+  font-size: 14px;
+}
+
+.card-bg{
+  background-color: rgb(242, 242, 242);
+}
+.hgs{
+  height: 50px;
+}
+.hgsx{
+  height: 42px;
+  align-items: center;
+  border-bottom: 1.5px solid rgb(210, 210, 210);
+}
+
+.x{
+  font-weight: 500;
+  font-size: 15px;
+}
