@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
 		if ($fname != "" && $lname != "" ) {
 			if ($password === $cpassword) {	
 				if(strlen($phone) == 10) {	
-					$insertquery = "INSERT INTO user_register(fname,lname,phone, email, password, cpassword,token,status) VALUES('$fname','$lname','$phone','$email','$pass','$cpass','$token','inactive')";
+					$insertquery = "INSERT INTO user_register(fname,lname,phone, email, password, cpassword,token,status,create_at) VALUES('$fname','$lname','$phone','$email','$pass','$cpass','$token','inactive','".date("y-m-d H:i:s")."')";
 					$query = mysqli_query($conn, $insertquery);
 					// header("location:http://localhost/project%20ecommrce/php/userregi_email.php?id='$email'");
 
