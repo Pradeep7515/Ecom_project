@@ -201,8 +201,7 @@
     <!--------------------------------this is the nevigation----------------------------->
 
     <!-- NAVIGATION -->
-		<nav id="navigation" class="">
-			<!-- container -->
+		<!-- <nav id="navigation" class="">
 			<div class="container p-0 px-4 px-lg-3">
 	
                 <nav class=" navbar-expand-sm d-none d-lg-block   m-0 p-0">
@@ -233,7 +232,7 @@
                           </li>
                       </ul>
                     </div>
-                  </nav>
+                  </nav> -->
 				  
 				
 			</div>
