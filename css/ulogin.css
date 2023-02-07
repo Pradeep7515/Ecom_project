@@ -35,6 +35,12 @@ width: 165px;
   width: 100%;
   border-radius: 15px;
 }
+.succ{
+  background-color: rgb(1, 239, 80);
+  color: green;
+  padding-left: 15px;
+  margin-bottom: 7px;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .tit{
